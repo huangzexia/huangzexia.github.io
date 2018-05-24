@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next mist use-motion" lang="">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -187,12 +187,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            文章
+            About
           </a>
         </li>
       
@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/24/20180524/" itemprop="url">我的都一片博客文章</a></h1>
+                <a class="post-title-link" href="/2018/05/24/20180524/" itemprop="url">利用GitHub + Hexo 快速搭建属于自己的博客</a></h1>
         
 
         <div class="post-meta">
@@ -300,136 +300,20 @@
       
         
           
-            <p>这个是我的第一篇文章，欢迎大家来关注</p>
+            <h2 id="一步步慢慢的爬吧"><a href="#一步步慢慢的爬吧" class="headerlink" title="一步步慢慢的爬吧"></a>一步步慢慢的爬吧</h2><h3 id="1、安装Node-、Git"><a href="#1、安装Node-、Git" class="headerlink" title="1、安装Node 、Git"></a>1、安装Node 、Git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 作为一个前端开发者就不说了</span><br></pre></td></tr></table></figure>
+<h3 id="2、安装Hexo脚手架-在本地生成页面"><a href="#2、安装Hexo脚手架-在本地生成页面" class="headerlink" title="2、安装Hexo脚手架,在本地生成页面"></a>2、安装Hexo脚手架,在本地生成页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ 全局安装(这里我选择npm,你也可以试一下yarn)：npm i -g hexo-cli</span><br><span class="line">$ 局部安装：</span><br><span class="line"><span class="built_in">cd</span> desktop</span><br><span class="line">mkdir Hexo</span><br><span class="line"><span class="built_in">cd</span> Hexo</span><br><span class="line">hexo i my-blog // i是初始化init的缩写 my-blog则是我们自己给博客起的名字</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">hexo -g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="3、打开浏览器输入：http-localhost-4000-（不出问题的话就会出现下图所见的页面了）"><a href="#3、打开浏览器输入：http-localhost-4000-（不出问题的话就会出现下图所见的页面了）" class="headerlink" title="3、打开浏览器输入：http://localhost:4000/（不出问题的话就会出现下图所见的页面了）"></a>3、打开浏览器输入：<a href="http://localhost:4000/（不出问题的话就会出现下图所见的页面了）" target="_blank" rel="noopener">http://localhost:4000/（不出问题的话就会出现下图所见的页面了）</a></h3><p><img src="https://s1.ax1x.com/2018/05/24/CWJuJs.jpg" alt="CWJuJs.jpg"></p>
+<p>现在你已经可以在这个主题下写博客了。当然，作为一个前端开发工程师我想你肯定是不喜欢这样的。肯定是要换皮肤的，这里我就以：<font color="red">next</font> 这个皮肤主题简单说说吧，这个也是很多用hexo搭建起来的个人网站非常喜欢的，我自己也喜欢，如下图所示：简单、清爽</p>
+<p><img src="http://i2.bvimg.com/646977/1d23da559a72a488.jpg" alt="Markdown"></p>
+<h3 id="4、next主题安装选择"><a href="#4、next主题安装选择" class="headerlink" title="4、next主题安装选择"></a>4、next主题安装选择</h3><p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next</a>主题选择有三种选择，上图所示的是最简洁的一种，三种样式主题分别是：</p>
+<ul><br>  <li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li><br>  <li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li><br>  <li>Pisces - 双栏 Scheme，小家碧玉似的清新</li><br></ul>
 
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/24/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="山人">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="拾艺">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/24/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-24T14:12:43+08:00">
-                2018-05-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 主题安装：命令行进入根目录</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">输入：git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>安装完成后,用编辑器打开项目，找到根目录下面的配置文件：<font color="red">_config.yml</font>，这个时候我们会发现根目录下的themes文件夹多了一个next文件，这就是刚刚下载的主题：然后我们修改如图所示的地方，将主题替换：然后我们再在命令行运行下面的命令：<br><img src="http://i2.bvimg.com/646977/8d5557b342f4420f.jpg" alt="Markdown"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  $  hexo clean  //清除缓存</span><br><span class="line">  $  hexo g  //重新生成代码</span><br><span class="line">  $  hexo s  //部署到本地</span><br><span class="line"></span><br><span class="line">//然后打开浏览器访问 localhost:4000 查看效果</span><br></pre></td></tr></table></figure>
+<p><img src="http://i2.bvimg.com/646977/1d23da559a72a488.jpg" alt="Markdown"></p>
+<p>到这里，本地对的开发配置就差不多了，接下来就轮到怎么样在GitHub上面显示了</p>
+<h3 id="5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）"><a href="#5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）" class="headerlink" title="5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）"></a>5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）</h3>
           
         
       
@@ -508,9 +392,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -569,7 +453,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -668,13 +552,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
 
