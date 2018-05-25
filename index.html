@@ -313,7 +313,20 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  $  hexo clean  //清除缓存</span><br><span class="line">  $  hexo g  //重新生成代码</span><br><span class="line">  $  hexo s  //部署到本地</span><br><span class="line"></span><br><span class="line">//然后打开浏览器访问 localhost:4000 查看效果</span><br></pre></td></tr></table></figure>
 <p><img src="http://i2.bvimg.com/646977/1d23da559a72a488.jpg" alt="Markdown"></p>
 <p>到这里，本地对的开发配置就差不多了，接下来就轮到怎么样在GitHub上面显示了</p>
-<h3 id="5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）"><a href="#5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）" class="headerlink" title="5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）"></a>5、将本地博客上传到你自己的GitHub（前提是你已经有github账号了）</h3>
+<h3 id="5、在GitHub上面创建一个仓库（前提是你已经有github账号了）"><a href="#5、在GitHub上面创建一个仓库（前提是你已经有github账号了）" class="headerlink" title="5、在GitHub上面创建一个仓库（前提是你已经有github账号了）"></a>5、在GitHub上面创建一个仓库（前提是你已经有github账号了）</h3><p>登录到GitHub,按照如图所示，创建一个仓库（注意后面的命名，最好选择和前面的一样，不然到时候域名地址会很长），按照这个操作 ，不出问题的话应该就可以看到一个网站了</p>
+<p><img src="http://i1.bvimg.com/646977/72d2dcfb28a254e4.png" alt="Markdown"></p>
+<p><img src="http://i1.bvimg.com/646977/b0b659a86844a004.png" alt="Markdown"><br>PS: <font color="red">上面的报红是因为我已经创建了一个相同名字的仓库了，你只要给自己起一个名字就可以了</font></p>
+<p><img src="http://i4.bvimg.com/646977/dda3a13a0668e96f.jpg" alt="Markdown"></p>
+<p><img src="http://i4.bvimg.com/646977/1b3dcaf711dec746.jpg" alt="Markdown"></p>
+<p><img src="http://i4.bvimg.com/646977/46f99f78cdc61c0e.jpg" alt="Markdown"></p>
+<p>PS: <font color="red">最好还是选择一个，不然就是一个空白页面</font></p>
+<h3 id="6、本地代码上传到创建的远程仓库"><a href="#6、本地代码上传到创建的远程仓库" class="headerlink" title="6、本地代码上传到创建的远程仓库"></a>6、本地代码上传到创建的远程仓库</h3><p>在项目根目录找到配置文件，在如图所示的地方修改：</p>
+<p><img src="http://i2.bvimg.com/646977/baf13c17c8d297dc.jpg" alt="Markdown"></p>
+<p>这个时候要装一个Hexo提供的一个插件：<a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">hexo-deployer-git</a>，这个插件是为了快速方便的一键部署到gitHub上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i hexo-deployer-git -s</span><br></pre></td></tr></table></figure>
+<p>安装完后运行下面的命令：不报错的话一会儿就会发布到远端了（但是可能不一定立马生效，稍微等几分钟）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clear //清除</span><br><span class="line">$ hexo g //生成静态页面</span><br><span class="line">$ hexo d //发布</span><br></pre></td></tr></table></figure>
+
           
         
       
