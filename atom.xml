@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>拾艺空间</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-25T05:50:57.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>吴门山人</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用GitHub + Hexo 快速搭建属于自己的博客</title>
+    <link href="http://yoursite.com/2018/05/24/20180524/"/>
+    <id>http://yoursite.com/2018/05/24/20180524/</id>
+    <published>2018-05-24T07:25:12.000Z</published>
+    <updated>2018-05-25T05:50:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一步步慢慢的爬吧"><a href="#一步步慢慢的爬吧" class="headerlink" title="一步步慢慢的爬吧"></a>一步步慢慢的爬吧</h2><h3 id="1、安装Node-、Git"><a href="#1、安装Node-、Git" class="headerlink" title="1、安装Node 、Git"></a>1、安装Node 、Git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 作为一个前端开发者就不说了</span><br></pre></td></tr></table></figure><h3 id="2、安装Hexo脚手架-在本地生成页面"><a href="#2、安装Hexo脚手架-在本地生成页面" class="headerlink" title="2、安装Hexo脚手架,在本地生成页面"></a>2、安装Hexo脚手架,在本地生成页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ 全局安装(这里我选择npm,你也可以试一下yarn)：npm i -g hexo-cli</span><br><span class="line">$ 局部安装：</span><br><span class="line"><span class="built_in">cd</span> desktop</span><br><span class="line">mkdir Hexo</span><br><span class="line"><span class="built_in">cd</span> Hexo</span><br><span class="line">hexo i my-blog // i是初始化init的缩写 my-blog则是我们自己给博客起的名字</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">hexo -g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><h3 id="3、打开浏览器输入：http-localhost-4000-（不出问题的话就会出现下图所见的页面了）"><a href="#3、打开浏览器输入：http-localhost-4000-（不出问题的话就会出现下图所见的页面了）" class="headerlink" title="3、打开浏览器输入：http://localhost:4000/（不出问题的话就会出现下图所见的页面了）"></a>3、打开浏览器输入：<a href="http://localhost:4000/（不出问题的话就会出现下图所见的页面了）" target="_blank" rel="noopener">http://localhost:4000/（不出问题的话就会出现下图所见的页面了）</a></h3><p><img src="https://s1.ax1x.com/2018/05/24/CWJuJs.jpg" alt="CWJuJs.jpg"></p><p>现在你已经可以在这个主题下写博客了。当然，作为一个前端开发工程师我想你肯定是不喜欢这样的。肯定是要换皮肤的，这里我就以：<font color="red">next</font> 这个皮肤主题简单说说吧，这个也是很多用hexo搭建起来的个人网站非常喜欢的，我自己也喜欢，如下图所示：简单、清爽</p><p><img src="http://i2.bvimg.com/646977/1d23da559a72a488.jpg" alt="Markdown"></p><h3 id="4、next主题安装选择"><a href="#4、next主题安装选择" class="headerlink" title="4、next主题安装选择"></a>4、next主题安装选择</h3><p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next</a>主题选择有三种选择，上图所示的是最简洁的一种，三种样式主题分别是：</p><ul><br>  <li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li><br>  <li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li><br>  <li>Pisces - 双栏 Scheme，小家碧玉似的清新</li><br></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 主题安装：命令行进入根目录</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">输入：git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure><p>安装完成后,用编辑器打开项目，找到根目录下面的配置文件：<font color="red">_config.yml</font>，这个时候我们会发现根目录下的themes文件夹多了一个next文件，这就是刚刚下载的主题：然后我们修改如图所示的地方，将主题替换：然后我们再在命令行运行下面的命令：<br><img src="http://i2.bvimg.com/646977/8d5557b342f4420f.jpg" alt="Markdown"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  $  hexo clean  //清除缓存</span><br><span class="line">  $  hexo g  //重新生成代码</span><br><span class="line">  $  hexo s  //部署到本地</span><br><span class="line"></span><br><span class="line">//然后打开浏览器访问 localhost:4000 查看效果</span><br></pre></td></tr></table></figure><p><img src="http://i2.bvimg.com/646977/1d23da559a72a488.jpg" alt="Markdown"></p><p>到这里，本地对的开发配置就差不多了，接下来就轮到怎么样在GitHub上面显示了</p><h3 id="5、在GitHub上面创建一个仓库（前提是你已经有github账号了）"><a href="#5、在GitHub上面创建一个仓库（前提是你已经有github账号了）" class="headerlink" title="5、在GitHub上面创建一个仓库（前提是你已经有github账号了）"></a>5、在GitHub上面创建一个仓库（前提是你已经有github账号了）</h3><p>登录到GitHub,按照如图所示，创建一个仓库（注意后面的命名，最好选择和前面的一样，不然到时候域名地址会很长），按照这个操作 ，不出问题的话应该就可以看到一个网站了</p><p><img src="http://i1.bvimg.com/646977/72d2dcfb28a254e4.png" alt="Markdown"></p><p><img src="http://i1.bvimg.com/646977/b0b659a86844a004.png" alt="Markdown"><br>PS: <font color="red">上面的报红是因为我已经创建了一个相同名字的仓库了，你只要给自己起一个名字就可以了</font></p><p><img src="http://i4.bvimg.com/646977/dda3a13a0668e96f.jpg" alt="Markdown"></p><p><img src="http://i4.bvimg.com/646977/1b3dcaf711dec746.jpg" alt="Markdown"></p><p><img src="http://i4.bvimg.com/646977/46f99f78cdc61c0e.jpg" alt="Markdown"></p><p>PS: <font color="red">最好还是选择一个，不然就是一个空白页面</font></p><h3 id="6、本地代码上传到创建的远程仓库"><a href="#6、本地代码上传到创建的远程仓库" class="headerlink" title="6、本地代码上传到创建的远程仓库"></a>6、本地代码上传到创建的远程仓库</h3><p>在项目根目录找到配置文件，在如图所示的地方修改：</p><p><img src="http://i2.bvimg.com/646977/baf13c17c8d297dc.jpg" alt="Markdown"></p><p>这个时候要装一个Hexo提供的一个插件：<a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">hexo-deployer-git</a>，这个插件是为了快速方便的一键部署到gitHub上</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i hexo-deployer-git -s</span><br></pre></td></tr></table></figure><p>安装完后运行下面的命令：不报错的话一会儿就会发布到远端了（但是可能不一定立马生效，稍微等几分钟）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clear //清除</span><br><span class="line">$ hexo g //生成静态页面</span><br><span class="line">$ hexo d //发布</span><br></pre></td></tr></table></figure><p><img src="http://i2.bvimg.com/646977/28ff08445f23c71f.jpg" alt="Markdown"></p><p>几分钟后打开你的网站，应该就可以看到你本地的效果了（下图是我自己的）：是不是觉得很简单，当然这个应该是最基础的了</p><p><img src="http://i2.bvimg.com/646977/26fc0055262aa2c0.jpg" alt="Markdown"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一步步慢慢的爬吧&quot;&gt;&lt;a href=&quot;#一步步慢慢的爬吧&quot; class=&quot;headerlink&quot; title=&quot;一步步慢慢的爬吧&quot;&gt;&lt;/a&gt;一步步慢慢的爬吧&lt;/h2&gt;&lt;h3 id=&quot;1、安装Node-、Git&quot;&gt;&lt;a href=&quot;#1、安装Node-、Git&quot; c
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
